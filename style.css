@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator-bg {
+    width: 95vw;
+    height: 80vh;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-screen {
+    width: 90%;
+    height: 25%;
+    margin: 17px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#screen-text {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 3rem;
+    margin-right: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    direction: rtl;
+    text-align: left;
+}
+
+.buttons {
+    width: 90%;
+    height: 65%;
+    border-radius: 10px;
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-bottom: 17px;
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    background-color: black;
+}
+
+.left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+}
+
+.top-row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+.numbers button {
+    background-color: aliceblue;
+}
+
+.top-row button {
+    background-color: antiquewhite;
+}
+
+.right button {
+    background-color: azure;
+}
+
+#equal {
+    background-color: hotpink;
+    color: white;
+}
+
+.num-top,
+.num-mid,
+.num-bot,
+.num-bot-zero {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    /* outline: 1px solid black; */
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+}
+
+.zero {
+    flex: 2;
+    /* background-color: pink; */
+}
+
+.decimal {
+    flex: 1;
+    /* background-color: darkblue; */
+}
+
+#zero {
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+}
+
+#decimal {
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+}
+
+button {
+    flex: 1;
+    margin: 1.5px;
+    border-radius: 5px;
+    font-size: larger;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
