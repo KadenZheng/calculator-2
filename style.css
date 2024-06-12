@@ -32,12 +32,12 @@ body {
 
 #screen-text {
     font-family: "Courier New", Courier, monospace;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-right: 10px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    direction: rtl;
+    direction: ltr;
     text-align: left;
 }
 
@@ -141,6 +141,6 @@ button {
     flex: 1;
     margin: 1.5px;
     border-radius: 5px;
-    font-size: larger;
+    font-size: 1.5rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
